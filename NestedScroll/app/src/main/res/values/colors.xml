@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- style 颜色-->
+    <color name="colorPrimary">#049aff</color>
+    <color name="colorPrimaryDark">#9beeff</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="windowBackground">#666</color>
+
+    <!-- toolbar 颜色-->
+    <color name="textColorPrimary">#000</color>
+    <color name="textColorSecondary">#fef100</color>
+
+    <color name="theme_color_action_mode">#fff</color>
+</resources>

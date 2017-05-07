@@ -1,0 +1,50 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- 标题栏背景色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- 状态栏的背景色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- 各控制元件(如：check box、switch 或是 radio) 被勾选 (checked) 或是选定 (selected) 的颜色。-->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- App 的背景色-->
+        <item name="android:windowBackground">@color/windowBackground</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <!--action Mode背景-->
+        <item name="actionModeBackground">@color/theme_color_action_mode</item>
+
+        <!--navigationBar的背景色，但只能用在 API Level 21 (Android 5) 以上的版本
+
+        <item name="android:navigationBarColor">@android:color/holo_green_dark</item>
+        -->
+    </style>
+
+    <!-- 取消标题栏-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+       <!--statusBar的背景色，但只能用在 API Level 21 (Android 5) 以上的版本
+
+       <item name="android:statusBarColor">@android:color/transparent</item>-->
+    </style>
+
+    <!--menu样式和AppBarLayout样式 覆盖物的颜色-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+
+    <!--标题栏的字体样式-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <!-- 用来定义标题栏文字颜色,setTitle时使用，自定义的toolbar中的textView不起效果-->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <!-- 用来定义弹出菜单icon的颜色(竖着排列的那三个点颜色，以及返回按钮等)-->
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <!-- 用来定义弹出菜单OptionMenu文字的颜色，自定义的toolbar中的textView有效果-->
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+</resources>

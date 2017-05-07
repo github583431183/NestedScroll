@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wjz.nestedscroll">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".coordinator.CollapsingToolbarLayout.CollapsingToolbarCoordinatorActivity" />
+        <activity android:name=".coordinator.CollapsingToolbarLayout.CollapsingToolbarWithImageActivity" />
+        <activity android:name=".coordinator.FABScrollCoordinatorActivity.FABScrollCoordinatorActivity" />
+        <activity android:name=".nestedscroll.NestedScrollImplActivity"></activity>
+        <activity android:name="com.wjz.nestedscroll.sticky.StickyActivity"></activity>
+        <activity android:name="com.wjz.nestedscroll.coordinator.DefineBehavior.ClickMove.DefineClickMoveBehaviorActivity"></activity>
+        <activity android:name="com.wjz.nestedscroll.coordinator.DefineBehavior.Scroll.DefineMoveActivity"></activity>
+        <activity android:name="com.wjz.nestedscroll.coordinator.FABScrollCoordinatorActivity.FABBackTopActivity"></activity>
+        <activity android:name="com.wjz.nestedscroll.coordinator.FABScrollCoordinatorActivity.FabDownShowAddActivity"></activity>
+        <activity android:name="com.wjz.nestedscroll.coordinator.SwipeDismissBehavior.SwipeDismissBehaviorActivity"></activity>
+        <activity android:name="com.wjz.nestedscroll.coordinator.BottomSheetBehavior.BottomSheetBehaviorActivity"></activity>
+    </application>
+
+</manifest>

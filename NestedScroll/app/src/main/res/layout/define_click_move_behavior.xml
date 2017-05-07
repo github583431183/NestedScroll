@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dependency"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#0ff"
+        android:gravity="center"
+        android:text="dependency" />
+
+    <TextView
+        android:id="@+id/child"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="right"
+        android:background="#ff0"
+        android:gravity="center"
+        android:text="child"
+        app:layout_behavior="com.wjz.nestedscroll.coordinator.DefineBehavior.ClickMove.DefineClickMoveBehavior" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 父接口 监听 子接口 的回调 处理子View的滑动事件-->
+    <com.wjz.nestedscroll.nestedscroll.NestedScrollParentImpl
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f"
+            android:text="@string/app_name" />
+
+        <com.wjz.nestedscroll.nestedscroll.NestedScrollChildImpl
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/large_text"
+                android:textColor="#f0f" />
+        </com.wjz.nestedscroll.nestedscroll.NestedScrollChildImpl>
+    </com.wjz.nestedscroll.nestedscroll.NestedScrollParentImpl>
+</RelativeLayout>

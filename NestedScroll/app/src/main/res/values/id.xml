@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="top_view" type="id"/>
+    <item name="indicator_view" type="id"/>
+    <item name="viewpager" type="id"/>
+
+</resources>
